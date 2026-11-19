@@ -1,5 +1,7 @@
 # VolumeWitness
 
+![VolumeWitness cover showing two storage cartridges with teal and amber indicators](volumewitness-cover.png)
+
 See if your next Docker Compose deploy will switch database volumes.
 
 A directory move, project-name change, or Compose override can change the
