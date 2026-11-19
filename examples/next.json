@@ -1,0 +1,17 @@
+{
+  "name": "demo_v2",
+  "services": {
+    "db": {
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "pgdata",
+          "target": "/var/lib/postgresql/data"
+        }
+      ]
+    }
+  },
+  "volumes": {
+    "pgdata": {"name": "demo_v2_pgdata"}
+  }
+}

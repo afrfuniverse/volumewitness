@@ -1,0 +1,7 @@
+[
+  {
+    "Type": "volume",
+    "Name": "demo_pgdata",
+    "Destination": "/var/lib/postgresql/data"
+  }
+]
