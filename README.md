@@ -40,6 +40,21 @@ and `--project-directory` are supported. The service name is from the
 **proposed** Compose model, and the target is the exact mount path inside
 the container.
 
+## Example terminal output
+
+Both runs compare the sample PostgreSQL mount at
+`/var/lib/postgresql/data` with a resolved Compose model.
+
+**`SAME`**. The proposed `demo` project resolves to the existing `demo_pgdata` volume.
+The model in this run was generated with
+`docker compose -f examples/compose.yaml -p demo config --format json`.
+
+![PowerShell output showing SAME and demo_pgdata for both volume names](docs/images/terminal-same.png)
+
+**`CHANGED`**. The included `examples/next.json` model resolves to `demo_v2_pgdata`.
+
+![PowerShell output showing CHANGED from demo_pgdata to demo_v2_pgdata](docs/images/terminal-changed.png)
+
 ## Exit codes
 
 | Code | Status | Meaning |
